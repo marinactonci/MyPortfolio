@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon-white.ico" type="image/x-icon">
     <title>TM | Front End Developer</title>
 </head>
+
 <body>
-    <section id="particles-js" class="hero noselect">
-        <header>
-            <a class="logo" href="https://marinactonci.netlify.app/"><img src="images/octopus-white.png" alt=""></a>
-            <div class="navbar" id="navbar">
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#technologies">Technologies</a>
-                <a class="nav-link" href="#about">About</a>
+    <nav class="navbar navbar-expand-md navbar-dark navbar py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/octopus-white.png" alt=""> TM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                data-mdb-right="true">
+                <span><i class="fa fa-bars" id="hamburger"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item translate"><a href="#projects" class="navbar-link">Projects</a></li>
+                    <li class="nav-item translate"><a href="#technologies" class="navbar-link">Technologies</a></li>
+                    <li class="nav-item translate"><a href="#about" class="navbar-link">About</a></li>
+                </ul>
             </div>
-            <div class="social-header">
-                <a class="social-link" href="https://github.com/marinactonci"><i class="fa-brands fa-github"></i></a>
-                <a class="social-link" href="https://www.linkedin.com/in/marinactonci/"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="social-link" href="https://instagram.com/marinactonci"><i class="fa-brands fa-instagram"></i></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item scale"><a class="social-link" href="https://github.com/marinactonci"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="nav-item scale"><a class="social-link" href="https://www.linkedin.com/in/marinactonci/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="nav-item scale"><a class="social-link" href="https://instagram.com/marinactonci"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
             </div>
-            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </header>
+        </div>
+    </nav>
+    <section class="hero noselect" id="particles-js">
         <div class="hero-div">
-            <h1 class="special">Welcome To<br>My Personal Portfolio</h1>
-            <p class="special hero-text">I'm <span class="ime">Tonči</span> and I'm an aspiring Web developer. <br> I enjoy spending my time building websites.</p>
-            <a class="special" href="#projects"><button class="primaryButtonWhite">Learn More</button></a>
+            <h1>Welcome To<br>My Personal Portfolio</h1>
+            <p>I'm <span class="ime">Tonči</span> and I'm an aspiring Web developer. <br> I
+                enjoy spending my time building websites.</p>
+            <a href="#projects"><button class="primaryButtonWhite">Learn More</button></a>
         </div>
     </section>
     <section id="projects" class="projects">
@@ -38,33 +50,40 @@
         <div class="project-grid">
             <a class="project-tile" href="https://github.com/marinactonci/TributePage" target="_blank">
                 <img class="project-image" src="images/tribute-page.png" alt="">
-                <p class="project-title"><span class="code"><</span> Tribute Page <span class="code">/></span></p>
+                <p class="project-title"><span class="code">
+                        <</span> Tribute Page <span class="code">/></span></p>
             </a>
             <a class="project-tile" href="https://github.com/marinactonci/Apartmani-Mladen" target="_blank">
                 <img class="project-image" src="images/apartmani-mladen.png" alt="">
-                <p class="project-title"><span class="code"><</span> Apartments Mladen <span class="code">/></span></p>
+                <p class="project-title"><span class="code">
+                        <</span> Apartments Mladen <span class="code">/></span></p>
             </a>
             <a class="project-tile" href="https://github.com/marinactonci/PortfolioTemplate" target="_blank">
                 <img class="project-image" src="images/personal-portfolio.png" alt="">
-                <p class="project-title"><span class="code"><</span> Portfolio Template <span class="code">/></span></p>
+                <p class="project-title"><span class="code">
+                        <</span> Portfolio Template <span class="code">/></span></p>
             </a>
             <a class="project-tile" href="https://github.com/marinactonci/TechnicalDocumentationPage" target="_blank">
                 <img class="project-image" src="images/technical-documentation-page.png" alt="">
-                <p class="project-title"><span class="code"><</span> Technical Documentation <span class="code">/></span></p>
+                <p class="project-title"><span class="code">
+                        <</span> Technical Documentation <span class="code">/></span></p>
             </a>
             <a class="project-tile" href="https://github.com/marinactonci/SurveyForm" target="_blank">
                 <img class="project-image" src="images/survey-form.png" alt="">
-                <p class="project-title"><span class="code"><</span> Survey Form <span class="code">/></span></p>
+                <p class="project-title"><span class="code">
+                        <</span> Survey Form <span class="code">/></span></p>
             </a>
             <a class="project-tile" href="https://github.com/marinactonci/ProductLandingPage" target="_blank">
                 <img class="project-image" src="images/product-landing-page.png" alt="">
-                <p class="project-title"><span class="code"><</span> Product Landing Page <span class="code">/></span></p>
+                <p class="project-title"><span class="code">
+                        <</span> Product Landing Page <span class="code">/></span></p>
             </a>
         </div>
     </section>
     <section id="technologies" class="technologies">
         <h1>Technologies</h1>
-        <p>I have experience with some technologies in the Web Development world. That includes couple of technologies from Front End, Back End and UI/UX.<br></p>
+        <p>I have experience with some technologies in the Web Development world. That includes couple of technologies
+            from Front End, Back End and UI/UX.<br></p>
         <p>I'm open to new learning opportunities.</p>
         <div class="technologies-grid">
             <div class="technologies-tile">
@@ -81,16 +100,19 @@
                 <i class="fa-solid fa-user"></i>
                 <h3>UI/UX</h3>
                 <p>Experience with <br> tools like Figma</p>
-            </div> 
+            </div>
         </div>
     </section>
     <section id="about" class="about">
         <div class="about-div">
             <h1>About</h1>
-            <p class="about-text">My name is Tonči Marinac. I'm 21 and a Computer Science student. Graduated high school, majoring in computer technician. Currently in my third year of university. I am diligent on topics that interest me and ready to adopt new knowledge.</p>
+            <p class="about-text">My name is Tonči Marinac. I'm 21 and a Computer Science student. Graduated high
+                school, majoring in computer technician. Currently in my third year of university. I am diligent on
+                topics that interest me and ready to adopt new knowledge.</p>
             <div class="social-about">
                 <a href="https://github.com/marinactonci" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/marinactonci/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/marinactonci/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
                 <a href="https://instagram.com/marinactonci" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
@@ -102,7 +124,8 @@
                     <input class="inpit" type="text" name="email" placeholder="Email" required>
                 </div>
                 <input class="input" type="text" name="subject" placeholder="Subject" required>
-                <textarea class="input" name="message" id="textarea" cols="30" rows="10" placeholder="Message" required></textarea>
+                <textarea class="input" name="message" id="textarea" cols="30" rows="10" placeholder="Message"
+                    required></textarea>
                 <button class="primaryButtonPurple" type="submit">Send Message</button>
             </form>
         </div>
@@ -123,16 +146,19 @@
         </div>
         <div class="social-footer">
             <a href="https://github.com/marinactonci" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/marinactonci/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/marinactonci/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
             <a href="https://instagram.com/marinactonci" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS.load('particles-js', 'particles.json',  function(){
+        particlesJS.load('particles-js', 'particles.json', function () {
             console.log('particles.json loaded...')
         });
     </script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 </html>
