@@ -29,9 +29,7 @@ html {
 
 a,
 button,
-h1,
 h2,
-h3,
 li {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
@@ -42,29 +40,17 @@ h2,
 h3,
 p {
     cursor: default;
-    font-size: x-large;
-}
-
-h1,
-h3 {
-    font-weight: 700;
-}
-
-h1 {
-    font-size: xxx-large;
-}
-
-h2 {
-    font-size: xx-large;
-}
-
-h3 {
-    font-size: x-large;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
 }
 
 p {
-    font-family: Montserrat, sans-serif;
-    font-weight: 300;
+    font-size: max(3vw, 30px);
+}
+
+.horizontal-line {
+    display: flex;
+    justify-content: center;
 }
 
 .primaryButtonWhite {
@@ -183,11 +169,15 @@ navbar-link {
 .hero-div {
     position: absolute;
     color: #fff;
-    margin-left: 5rem;
+    margin-left: 10vw;
+}
+
+.hero-div>h1{
+    font-size: max(3vw, 35px);
 }
 
 .ime {
-    font-size: 2.2rem;
+    font-size: inherit;
     font-weight: 700;
     background: -webkit-linear-gradient(20deg, #ff0, #fff);
     -webkit-background-clip: text;
@@ -195,8 +185,9 @@ navbar-link {
 }
 
 .projects>h1 {
-    padding: 5rem 0 1rem 5rem;
+    padding: 5rem 0 1rem 10vw;
     color: var(--purple);
+    font-size: max(3vw, 35px);
 }
 
 .project-grid {
@@ -247,17 +238,19 @@ navbar-link {
 }
 
 .technologies>h1 {
-    padding: 5rem 0 1rem 5rem;
+    padding: 5rem 0 1rem 10vw;
+    font-size: 50px;
 }
 
 .technologies>p {
-    padding-left: 5rem;
+    padding-left: 10vw;
     padding-right: 50px;
+    font-size: 30px;
 }
 
 .technologies-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-self: center;
     column-gap: 10rem;
     row-gap: 5rem;
@@ -270,36 +263,36 @@ navbar-link {
 }
 
 .technologies-tile>h3 {
-    padding: 10px 0 2px 0;
+    font-size: 35px;
 }
 
 .technologies-tile>i {
     font-size: 40px;
 }
 
-.technologies-tile>img {
-    width: 40px;
-    height: 40px;
-    fill: #fff;
+.technologies-tile>p {
+    font-size: 30px;
 }
 
 .about {
     color: var(--purple);
     display: flex;
     flex-direction: column;
+    margin-bottom: 2.5rem;
 }
 
 .about>div>h2 {
-    padding: 2rem 0 1rem 5rem;
+    padding: 2rem 0 1rem 10vw;
 }
 
 .about-div>h1 {
-    padding: 5rem 0 1rem 5rem;
+    font-size: 50px;
+    padding: 5rem 0 1rem 10vw;
 }
 
-.about-div>a,
 .about-div>p {
-    padding-left: 5rem;
+    padding-left: 10vw;
+    font-size: 30px;
 }
 
 .about-div>p {
@@ -312,7 +305,7 @@ navbar-link {
 }
 
 form {
-    margin: 0 5rem;
+    margin: 0 10vw;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -355,8 +348,7 @@ form>textarea {
 }
 
 hr {
-    border: 1px solid var(--purple);
-    margin: 2rem 1.5rem;
+    width: 90%;
 }
 
 .footer-list {
