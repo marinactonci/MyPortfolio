@@ -27,6 +27,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
 a,
 button,
 h2,
