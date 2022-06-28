@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .noselect {
@@ -25,10 +26,6 @@
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 a,
